@@ -18,6 +18,13 @@ const routes = [
       import(/* webpackChunkName: "signin" */ "../views/Signin.vue"),
   },
   {
+    path: "/user/:userId",
+    props: true,
+    name: "UserProfile",
+    component: () =>
+      import(/* webpackChunkName: "userprofile" */ "../views/UserProfile.vue"),
+  },
+  {
     path: "*",
     name: "NotFound",
     component: () =>

@@ -1,13 +1,14 @@
 <template>
-  <div class="home">Home Comp</div>
+  <v-container grid-list-xs>
+    <QuestionsList />
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {},
+  components: {
+    QuestionsList: () => import("@/components/QuestionsListComponent"),
+  },
 };
 </script>
