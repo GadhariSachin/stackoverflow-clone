@@ -21,15 +21,15 @@
           <v-list-item-content>
             <v-list-item-title>
               <router-link :to="{ name: 'Signin' }" class="text-dark">
-                Sign In</router-link
-              >
+                Sign In
+              </router-link>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item v-else>
           <v-list-item-content>
-            <v-list-item-title>
-              <v-btn color="danger" text @click="logoutUser"> Sign Out </v-btn>
+            <v-list-item-title @click="logoutUser">
+              Sign Out
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -43,7 +43,7 @@ export default {
   name: "NavigationComponent",
   computed: {
     isUserLoggedIn() {
-      return this.$store.state.loggedUser;
+      return this.$store.getters.isUserLoggedIn;
     },
   },
   methods: {

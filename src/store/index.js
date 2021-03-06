@@ -13,9 +13,12 @@ export default new Vuex.Store({
     },
   },
   getters: {
-    isUserLoggedIn() {
+    isUserLoggedIn(state) {
       let token = localStorage.getItem("token");
-      return token ? true : false;
+      if (token) {
+        state.loggedUser = token;
+      }
+      return state.loggedUser;
     },
   },
   actions: {
