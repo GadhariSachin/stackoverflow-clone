@@ -56,7 +56,12 @@
               <p>
                 modified on
                 {{ new Date(question.last_activity_date).toDateString() }} -
-                <router-link to="/">
+                <router-link
+                  :to="{
+                    name: 'UserProfile',
+                    params: { userId: question.owner.user_id },
+                  }"
+                >
                   {{ question.owner.display_name }}
                 </router-link>
               </p>
