@@ -1,5 +1,10 @@
 # stackoverflow-clone
 
+![Snapshot](https://github.com/GadhariSachin/HTML-CSS/blob/master/stackoverflow-clone-questionlist-page.png)
+![Snapshot](https://github.com/GadhariSachin/HTML-CSS/blob/master/stackoverflow-clone-signin-page.png)
+![Snapshot](https://github.com/GadhariSachin/HTML-CSS/blob/master/stackoverflow-clone-user-profile-page.png)
+
+
 ## Project setup
 ```
 yarn install
